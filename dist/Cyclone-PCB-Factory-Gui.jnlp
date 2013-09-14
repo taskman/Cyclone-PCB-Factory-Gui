@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cyclone-PCB-Factory-Gui.jnlp">
+  <information>
+    <title>Cyclone-PCB-Factory-Gui</title>
+    <vendor>dutoitk</vendor>
+    <description>Sample JavaFX 2.0 application.</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path=C:\Util\j3d-1_5_2-windows-amd64\j3d-jre\bin\ "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cyclone-PCB-Factory-Gui.jar" size="142784" download="eager" />
+    <jar href="lib/SerialComm.jar" size="83042" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cyclone-PCB-Factory-Gui" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="au.com.custom3dcnc.Main"  name="Cyclone-PCB-Factory-Gui" />
+  <update check="always"/>
+</jnlp>

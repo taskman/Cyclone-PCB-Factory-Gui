@@ -1,0 +1,1 @@
+j3d-1_5_2-macosx.zip didn't contain a Mac specific file
