@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-1.0" maxWidth="-1.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <BorderPane layoutX="0.0" layoutY="0.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="900.0" prefWidth="1280.0" style="">
+      <center>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+          <children>
+            <TabPane layoutX="0.0" layoutY="0.0" prefHeight="876.0" prefWidth="1280.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Milling">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <StackPane id="" layoutX="0.0" layoutY="0.0" prefHeight="852.0" prefWidth="1280.0">
+                          <children>
+                            <GridPane gridLinesVisible="false" visible="false">
+                              <children>
+                                <VBox alignment="TOP_RIGHT" prefHeight="284.0" prefWidth="365.0000999999975" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                  <children>
+                                    <Label text="Circuit file" />
+                                    <Label text="Drill file" />
+                                    <Label text="Cut file" />
+                                    <Label text="Parser" />
+                                  </children>
+                                  <padding>
+                                    <Insets right="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <children>
+                                    <TextField prefWidth="200.0" />
+                                    <TextField prefWidth="200.0" />
+                                    <TextField prefWidth="200.0" />
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select parser">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                  </children>
+                                  <padding>
+                                    <Insets top="10.0" fx:id="x1" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="..." />
+                                    <Button mnemonicParsing="false" text="..." />
+                                    <Button mnemonicParsing="false" text="..." />
+                                  </children>
+                                  <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox padding="$x1" prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                  <children>
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select file type">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select file type">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select file type">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                  </children>
+                                </VBox>
+                                <Label prefHeight="38.0" prefWidth="147.0" text="File selection" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                                  <font>
+                                    <Font size="20.0" fx:id="x2" />
+                                  </font>
+                                </Label>
+                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <HBox alignment="TOP_LEFT" prefHeight="464.0" prefWidth="512.0000999999975" visible="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Next" />
+                                  </children>
+                                </HBox>
+                              </children>
+                              <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="638.0" minWidth="10.0" prefWidth="138.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="576.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="54.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="512.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="399.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="464.0" minHeight="10.0" prefHeight="464.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                            </GridPane>
+                            <GridPane gridLinesVisible="false" visible="false">
+                              <children>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" font="$x2" graphicTextGap="40.0" prefHeight="38.0" prefWidth="269.0" text="GCode Preview" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <ScrollPane prefHeight="-1.0" prefWidth="-1.0" visible="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                      <children>
+                                        <ImageView fitHeight="606.5000004575805" fitWidth="808.6666870117188" layoutX="13.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                            <Image url="@../../../../../../temp/Cyclone-PCB-Factory-master/Software/GcodeGenerators/pyGerber2Gcode_CUI/out/GNBoard_viewGcode.png" />
+                                          </image>
+                                        </ImageView>
+                                      </children>
+                                    </AnchorPane>
+                                  </content>
+                                </ScrollPane>
+                                <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="91.0" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Back" />
+                                    <Button mnemonicParsing="false" text="Next" />
+                                  </children>
+                                  <padding>
+                                    <Insets right="280.0" />
+                                  </padding>
+                                </HBox>
+                              </children>
+                              <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1146.0" minWidth="10.0" prefWidth="1141.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="692.0" minHeight="10.0" prefHeight="692.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="464.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                            </GridPane>
+                            <GridPane gridLinesVisible="false" visible="false">
+                              <children>
+                                <VBox alignment="TOP_RIGHT" prefHeight="284.0" prefWidth="365.0000999999975" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                  <children>
+                                    <Label text="Comm port" />
+                                    <Label text="Connection type" />
+                                  </children>
+                                  <padding>
+                                    <Insets right="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <children>
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select comm port">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                    <ComboBox prefHeight="21.0" prefWidth="165.0" promptText="Select connection type">
+                                      <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                          <String fx:value="Item 1" />
+                                          <String fx:value="Item 2" />
+                                          <String fx:value="Item 3" />
+                                        </FXCollections>
+                                      </items>
+                                    </ComboBox>
+                                  </children>
+                                  <padding>
+                                    <Insets top="10.0" fx:id="x1" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                  <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                  <padding>
+                                    <Insets top="10.0" fx:id="x1" />
+                                  </padding>
+                                </VBox>
+                                <Label font="$x2" prefHeight="38.0" prefWidth="147.0" text="Z-Probe" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <HBox alignment="TOP_LEFT" prefHeight="100.0" prefWidth="200.0" visible="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Next" />
+                                  </children>
+                                </HBox>
+                              </children>
+                              <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="638.0" minWidth="10.0" prefWidth="138.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="576.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="54.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="512.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="399.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="464.0" minHeight="10.0" prefHeight="464.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="213.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                            </GridPane>
+                            <GridPane gridLinesVisible="false" visible="false">
+                              <children>
+                                <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" font="$x2" graphicTextGap="40.0" prefHeight="38.0" prefWidth="254.0" text="Z-Probe data" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <ScrollPane prefHeight="-1.0" prefWidth="-1.0" visible="true" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                  <content>
+                                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                      <children>
+                                        <ImageView fitHeight="606.5000004575805" fitWidth="808.6666870117188" layoutX="13.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                                          <image>
+                                            <Image url="@../GcodeGenerators/pyGerber2Gcode_CUI/out/GNBoard_Z_probing_interpolated.png" />
+                                          </image>
+                                        </ImageView>
+                                      </children>
+                                    </AnchorPane>
+                                  </content>
+                                </ScrollPane>
+                                <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="91.0" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="2">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Back" />
+                                    <Button mnemonicParsing="false" text="Next" />
+                                  </children>
+                                  <padding>
+                                    <Insets right="280.0" />
+                                  </padding>
+                                </HBox>
+                              </children>
+                              <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1146.0" minWidth="10.0" prefWidth="1141.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="692.0" minHeight="10.0" prefHeight="692.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="464.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                            </GridPane>
+                            <GridPane gridLinesVisible="false" visible="true">
+                              <children>
+                                <VBox alignment="TOP_RIGHT" prefHeight="284.0" prefWidth="365.0000999999975" spacing="10.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                  <padding>
+                                    <Insets right="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="4.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Circuit file" />
+                                    <Button mnemonicParsing="false" text="Drill file" />
+                                    <Button mnemonicParsing="false" text="Cut file" />
+                                  </children>
+                                  <padding>
+                                    <Insets top="10.0" fx:id="x1" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                  <padding>
+                                    <Insets left="10.0" top="10.0" />
+                                  </padding>
+                                </VBox>
+                                <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                  <padding>
+                                    <Insets top="10.0" fx:id="x1" />
+                                  </padding>
+                                </VBox>
+                                <Label font="$x2" prefHeight="38.0" prefWidth="147.0" text="File execution" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                                <VBox alignment="TOP_RIGHT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <HBox alignment="TOP_LEFT" prefHeight="100.0" prefWidth="200.0" visible="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                  <children>
+                                    <Button mnemonicParsing="false" text="Back" />
+                                  </children>
+                                </HBox>
+                                <TextArea prefWidth="200.0" text="Execution log" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              </children>
+                              <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="638.0" minWidth="10.0" prefWidth="138.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="576.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="54.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1067.0" minWidth="10.0" prefWidth="512.0" />
+                              </columnConstraints>
+                              <rowConstraints>
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="399.0" minHeight="10.0" prefHeight="121.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="646.0" minHeight="10.0" prefHeight="646.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="213.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                              </rowConstraints>
+                            </GridPane>
+                          </children>
+                        </StackPane>
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab content="$null" text="Manual Control" />
+              </tabs>
+            </TabPane>
+          </children>
+        </Pane>
+      </center>
+      <top>
+        <MenuBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="-1.0" rotate="0.0" BorderPane.alignment="CENTER">
+          <menus>
+            <Menu mnemonicParsing="false" text="File">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Properties" />
+                <MenuItem mnemonicParsing="false" text="Close" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Tools">
+              <items>
+                <Menu mnemonicParsing="false" text="Serial Ports">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="COM 1" />
+                  </items>
+                </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Favourites">
+              <items>
+                <MenuItem mnemonicParsing="false" text="homeX" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </top>
+    </BorderPane>
+  </children>
+</AnchorPane>
